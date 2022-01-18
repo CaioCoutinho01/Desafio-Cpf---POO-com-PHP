@@ -18,11 +18,11 @@ class Titular
             exit();
         }
     }
-    public function recuperaCpf(): string
+    public function getCpf(): string
     {
-        return $this->cpf->recuperaNumero();
+        return $this->cpf->getNumero();
     }
-    public function recuperaNome(): string
+    public function getNome(): string
     {
         return $this->nome;
     }

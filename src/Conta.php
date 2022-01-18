@@ -40,20 +40,20 @@ class Conta
         $this->sacar($valorATransferir);
         $contaDestino->depositar($valorATransferir);
     }
-    public function recuperarsaldo(): float
+    public function getsaldo(): float
     {
         return $this->saldo;
     }
-    public static function recuperaNumerodeContas(): int
+    public static function getNumerodeContas(): int
     {
         return self::$numerodeContas;
     }
-    public function recuperaNomeTitular(): string
+    public function getNomeTitular(): string
     {
-        return $this->titular->recuperaNome();
+        return $this->titular->getNome();
     }
-    public function recuperaCpfTitular(): string
+    public function getCpfTitular(): string
     {
-        return $this->titular->recuperaCpf();
+        return $this->titular->getCpf();
     }
 }
